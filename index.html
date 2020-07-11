@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Embedding google fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <!-- Linking css file -->
+  <link rel="stylesheet" href="style.css">
+<!-- Linking audio clips -->
+  <audio id="clip1">
+  	<source src="sounds/green.mp3"></source>
+  </audio>
+  <audio id="clip2">
+  	<source src="sounds/red.mp3"></source>
+  </audio>
+  <audio id="clip3">
+  	<source src="sounds/yellow.mp3"></source>
+  </audio>
+  <audio id="clip4">
+  	<source src="sounds/blue.mp3"></source>
+  </audio>
+  <audio id="clip5">
+  	<source src="sounds/wrong.mp3"></source>
+  </audio>
+</head>
+
+<body>
+  <div id="outer-circle">
+    <div id="topleft"></div>
+    <div id="topright"></div>
+    <div id="bottomleft"></div>
+    <div id="bottomright"></div>
+    <div id="inner-circle">
+      <div id="title" >SIMON!</div>
+      <div id="switches">
+        <input type="checkbox" class="toggle" id="on">
+        <button class="button" id="start">Start</button>
+        <input type="checkbox" class="toggle" id="strict">
+      </div>
+      <div class="text1">
+        <span>POWER</span><span>STRICT</span>
+      </div>
+      <div id="turn"></div>
+      <div class="text2">
+        COUNT
+      </div>
+    </div>
+  </div>
+<!-- Linking javascript file -->
+  <script  src="index.js"></script>
+</body>
+
+</html>
